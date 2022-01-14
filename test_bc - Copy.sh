@@ -1,0 +1,10 @@
+echo "This test does not check correctness it is just to make sure that the arguments run"
+
+ipython -c "run betweenness_centrality.py -h" && echo "passed help"
+ipython -c "run betweenness_centrality.py -s" && echo "passed static"
+ipython -c "run betweenness_centrality.py -t" && echo "passed temporal"
+ipython -c "run betweenness_centrality.py --traces" && echo "passed traces"
+ipython -c "run betweenness_centrality.py -d" && echo "passed derivative"
+ipython -c "run betweenness_centrality.py -r" && echo "passed correlation"
+ipython -c "run betweenness_centrality.py -x" && echo "passed crosstab"
+ipython -c "run betweenness_centrality.py --scatter" && echo "passed scatter"
